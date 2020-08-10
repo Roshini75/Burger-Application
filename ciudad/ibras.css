@@ -1,0 +1,534 @@
+h1 {
+    font-size: 6em;
+}
+h2{
+    font-size: 3em;
+}
+
+.active{
+    color: red !important;
+}
+
+.main-heading {
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+.main-subheading{
+    font-size: 2em;
+    color: #fff;
+}
+
+.main-heading h1 {
+    font-size: 5em; 
+}
+
+.width-el1 {
+	width: 25%; 
+}
+
+.width-el2 {
+	width: 50%; 
+}
+.history {
+    margin: 0px;
+    padding-top: 40px; 
+    background-color: black;
+    position: relative;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.history-content, .bug-text{
+    padding: 20px;
+}
+
+.line {
+    background: url('images/img.png');
+    background-repeat: repeat-x;
+    height: 17px;
+    width: 100%;
+}
+
+
+.line-up {
+   background: url(images/triangle_bg_black.png);
+    background-repeat: repeat-x;
+    height: 17px;
+    width: 100%;
+    transform: scaleY(-1);
+}
+
+.line-down {
+    background: url(images/triangle_bg_black.png);
+    background-repeat: repeat-x;
+    height: 17px;
+    width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+  background-color: #f4f7f8;
+  margin: auto;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* The Close Button */
+.closebutton {
+    position: absolute;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top: 15px;
+    right: 15px;
+}
+
+.closebutton:hover,
+.closebutton:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(images/hamburguesa2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;    
+
+}
+
+.menu-header {
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(images/hamburguesa5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;    
+}
+
+.contact-header{
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(images/hamburguesa7.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.aboutus-header {
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(images/hamburguesa4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.main-nav {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
+}
+.main-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav ul li a:active{
+    color: red;
+    text-decoration: none;
+}
+
+.visited {
+    color: red;
+    text-decoration: none;
+}
+
+.main-nav img {
+    margin-left: 15%;
+}
+.main-nav ul {
+    color: #fff;
+    list-style: none;
+    margin-left: 15%;
+}
+
+.main-nav ul li {
+    display: inline;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.burger-menu {
+    background: linear-gradient(
+                     rgba(20,20,20, .8), 
+                     rgba(20,20,20, .8)),
+                     url(images/hamburguesa1.jpg);
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    padding: 40px 0px 60px 0px;
+    display: block;
+}
+.bug-text {
+    color: #fff;
+}
+.burger-menu h2{
+    text-align: center;
+}
+
+.burger-menu-grid{
+    padding: 30px;
+}
+
+.btn-menu{
+    padding : 25px 0px 25px 0px;
+    text-align: center;
+}
+
+.burger-content {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.btn-burger {
+    background-color: transparent;
+    color: red;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.our-menu{
+    background-color: black;
+    position: relative; 
+    text-align: center;
+    margin-top: 0px;
+    padding: 40px 0px 60px 0px;
+}
+
+.our-menu h2{
+    text-align: center;
+}
+
+.our-menu ul li{
+    display: inline;
+    color: red;
+    margin: 0px 35px 0px 10px;
+}
+
+.our-menu ul {
+    text-align: center; 
+    padding-bottom: 6px;
+    font-size: 20px;
+    border-bottom: 2px solid red;
+}
+
+.multi-menu{
+    font-size: 20px;
+    color: #fff;
+    /*background: red;    */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.burger-price{
+    color: red;
+    margin-left: auto;
+}
+
+.burger-name{
+    margin-left: 10%;
+    color: #fff;
+}
+
+.burger-grp{
+    padding : 20px 15px 20px 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.burger-grp-2{
+    padding : 10px 15px 10px 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menupage-burger{
+    width: 100px;
+    height: 100px;
+}
+
+.menu-items {
+    background-color: black;
+    padding: 40px 0px 60px 0px;
+}
+.menu-items h2{
+    text-align: center;
+}
+.burger-col {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contact {
+    background-color: black;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 60px; 
+}
+.contact-form {
+   margin-left: 15%;
+   margin-right: 15%; 
+}
+
+.line1{
+    width: 100%;
+    padding: 5px;
+}
+
+.line2{
+    height: 45px;
+}
+
+.form-line {
+ padding: 10px;
+}
+.btn-submit {
+ padding: 20px;
+ margin: auto;
+}
+
+.ibra-section {
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.ibra-details{
+  display: inline-block;
+}
+.img1-style {
+    margin-right: 30px;
+}
+.about-us-img{
+    padding: 40px 0px 40px 0px;
+}
+
+.btn-green{
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+}
+
+.btn-class {
+    padding: 20px 0px 20px 0px;
+}
+
+.user-reviews {
+    background-color: black;
+}
+
+.comment {
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.dotactive {
+  background-color: #000;
+}
+
+.dot-container {
+          display: inline-block;
+      }
+
+.content {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+
+.testimonial-content{
+    padding: 10px;
+}
+
+.content h2{
+    padding: 50px 0px;
+}
+
+.icon {
+   color: #fff;
+}
+footer {
+    padding-top: 10px;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(images/hamburguesa3.jpg);
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.footer-heading{
+    color: #37B143;
+    text-decoration: underline;
+}
+
+.footer-content {
+    color: #fff;
+}
+.footer-section ul{
+    padding: 0;
+}
+.footer-section ul li{
+    display: inline;
+    text-decoration: none;
+    margin: 0px 5px 0px 5px;
+}
+
+.smallonmobile{
+    font-size: 3em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .main-heading h1 {
+        font-size: 4em; 
+    }
+
+    .smallonmobile{
+        font-size: 2em; 
+    }
+
+    .main-subheading{
+        font-size: 2em;
+    }
+
+    .burger-name{
+        font-size: 12px;
+    }
+
+    .menupage-burger{
+        width: 70px;
+        height: 70px;
+    }
+    .multi-menu{
+        font-size: 13px;
+    }
+    .burger-grp-2{
+        padding: 5px 5px;
+    }
+
+    .contact-form {
+       margin-left: 0%;
+       margin-right: 0%; 
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    /*For mobile:*/
+    .main-heading h1 {
+        font-size: 3em; 
+    }
+    .main-subheading{
+        font-size: 1.5em;
+    }
+    .smallonmobile{
+        font-size: 2em;
+    }
+    .menupage-burger{
+        width: 70px;
+        height: 70px;
+    }
+    .burger-grp-2{
+        padding: 0px 10px;
+    }
+    .contact-form {
+       margin-left: 5%;
+       margin-right: 5%; 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+}

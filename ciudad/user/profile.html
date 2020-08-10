@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../ciudad.css">
+        <link rel="stylesheet" type="text/css" href="../ibras.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../admin/style.css">
+        <link rel="stylesheet" href="../admin/admin.css">
+        <link rel="stylesheet" href="user.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../admin/font-awesome.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="../images/Burguer.png"/>
+        <title>Profile - User</title>
+        <style type="text/css">
+            input, textarea{
+                color: black !important;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="height: auto;">
+            <nav  id="borderimg1" class="main-nav">
+                <img src="../images/5.png" alt="logo" height="100" width="100">
+                <ul>
+                    <li class="onlyonlappy"><a href="../start.html">INICIO</a></li>
+                    <li class="onlyonlappy"><a href="../aboutus.html">SOBRE NOSOTROS</a></li>
+                    <li class="onlyonlappy"><a href="../menu.html">MENU</a></li>
+                    <li class="onlyonlappy"><a href="../blog/">BLOG</a></li>
+                    <li class="onlyonlappy"><a  href="../contact.html">CONTACTO</a></li>
+                    <li>
+                        <button class="openbtn" onclick="openNav()">☰ User Menu</button>  
+                    </li>
+                </ul>
+            </nav>
+            <div class="line"></div>
+            <div class="main-heading">
+                <p class="main-heading-p">My Profile!</p>
+            </div>
+            <div class="line-up" style=""></div>
+        </header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a class="onlynotonlappy" href="../start.html">INICIO</a>
+            <a class="onlynotonlappy" href="../aboutus.html">SOBRE NOSOTROS</a>
+            <a class="onlynotonlappy" href="../menu.html">MENU</a>
+            <a class="onlynotonlappy" href="../blog/">BLOG</a>
+            <a class="onlynotonlappy" href="../contact.html">CONTACTO</a>
+            <a href="profile.html"><i class="fa fa-user" aria-hidden="true" style="padding: 10px"></i>My Profile</a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true" style="padding: 10px"></i>Cart</a>
+            <a href="order_page.html"><i class="fa fa-cutlery" aria-hidden="true" style="padding: 10px"></i>Order Page</a>
+            <a href="orders.html"><i class="fa fa-address-book-o" aria-hidden="true" style="padding: 10px"></i>My Orders</a>
+            <a href="password.html"><i class="fa fa-key" aria-hidden="true" style="padding: 10px"></i>Change Password</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="padding: 10px"></i>Logout</a>
+        </div>
+        <div class="userpages-block">
+            <div class="line-down" style="position: absolute; top: 100%;"></div>
+            <div id="wrapper" class="padding-40">
+                <form action="index.html" method="post">
+                    <fieldset>
+                        <legend><span class="number">1</span>User Details</legend>
+                        <label for="Username">Username: (Read Only)</label>
+                        <input type="text" id="Username" name="Username" value="s.chandupatla" readonly="">
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="number" id="mobile" name="mobile" placeholder="+1(773)874-0927" value="321233232">
+                        <label for="mail">Email Address:</label>
+                        <input type="email" id="mail" name="mail" placeholder="xyz@email.com" value="">
+                        <label for="Address">Address:</label>
+                        <textarea id="Address" name="Address" placeholder="No onion, extra ketchup" style="height:100px"></textarea>
+                    </fieldset>
+                    <button type="submit" style="margin-top: 30px; background: green; border: none">Update Details</button>
+                    <button style="margin-top: 30px;background-color: orange; border: none;"><a href="password.html" style="text-decoration: none;">Change Password?</a></button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <section class="footer-section">
+                    <img src="../images/5.png" alt="logo" height="200" width="200">
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Habla a:</p>
+                    <p class="footer-content">Av. Intercommunal,sectro la Mora,calle 8</p>
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Telefono:</p>
+                    <p class="footer-content">+58 251 261 00 01</p>
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Correo:</p>
+                    <p class="footer-content">tadiroshini12@gmail.com</p>
+                </section>
+                <section class="footer-section">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-pinterest icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo icon"></i></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <p class="footer-content">Copyright &copy; 2020 Todos los derechos reservados | Este sitio esta hecho con &hearts; por DiazApps </p>
+                </section>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</html>

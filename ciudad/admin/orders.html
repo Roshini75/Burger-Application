@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../ciudad.css">
+        <link rel="stylesheet" type="text/css" href="../ibras.css">
+        <link rel="stylesheet" type="text/css" href="admin.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="icon" type="image/png" href="../images/Burguer.png"/>
+        <meta charset="utf-8">
+        <title>Orders - Admin</title>
+    </head>
+    <body>
+        <header style="height: auto; background: none;">
+            <nav  id="borderimg1" class="main-nav">
+                <img src="../images/5.png" alt="logo" height="100" width="100">
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">☰ Admin Menu</button>  
+                </div>
+            </nav>
+            <div class="line"></div>
+        </header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="dashboard.html"><i class="fa fa-th-large" aria-hidden="true" style="padding: 10px"></i>Dashboard</a>
+            <a href="add_product.html"><i class="fa fa-plus-square" aria-hidden="true" style="padding: 10px"></i>Add Product</a>
+            <a href="edit_product.html"><i class="fa fa-pencil-square-o" aria-hidden="true" style="padding: 10px"></i>Edit Product</a>
+            <a href="orders.html"><i class="fa fa-cutlery" aria-hidden="true" style="padding: 10px"></i>Orders</a>
+            <a href="profile.html"><i class="fa fa-user" aria-hidden="true" style="padding: 10px"></i>Admin Profile</a>
+            <a href="password.html"><i class="fa fa-key" aria-hidden="true" style="padding: 10px"></i>Change Password</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="padding: 10px"></i>Logout</a>
+
+        </div>
+        <div id="wrapper">
+            <center>
+                <h1>ORDER LIST</h1>
+            </center>
+            <div style="overflow-x: auto;">
+                <table id="t01">
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Order Name</th>
+                        <th>Customer Name</th>
+                        <th>Location</th>
+                        <th>Order Status</th>
+                        <th>Delivered Time</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mixta</td>
+                        <td>Lenin</td>
+                        <td>Old Street</td>
+                        <td>Pending</td>
+                        <td>9 10 AM</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pollo</td>
+                        <td>Rick</td>
+                        <td>New Town</td>
+                        <td>Delivered</td>
+                        <td>10 05 AM</td>
+                        <td>$9</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Carne</td>
+                        <td>John</td>
+                        <td>Oxford Street</td>
+                        <td>Cancelled</td>
+                        <td>14 35 PM</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>De Todito</td>
+                        <td>Jessica</td>
+                        <td>Church hill</td>
+                        <td>Delivered</td>
+                        <td>13 45 PM</td>
+                        <td>$8</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Mixta</td>
+                        <td>Shruthi</td>
+                        <td>Palace Street</td>
+                        <td>Delivered</td>
+                        <td>11 00 AM</td>
+                        <td>$12</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Carne</td>
+                        <td>Roshini</td>
+                        <td>High Street</td>
+                        <td>Pending</td>
+                        <td>11 25 AM</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Pollo</td>
+                        <td>Josh</td>
+                        <td>Avenue street</td>
+                        <td>Delivered</td>
+                        <td>16 20 PM</td>
+                        <td>$12</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-6 col-a-12 col-b-12" style="margin-bottom: 50px;margin-top: 40px;">
+                <div style="background: #f4f7f8; padding: 50px; text-align: center; padding-top: 15px;">
+                    <center>
+                        <h1 style="margin-top: 80px; color: black;">FAVOURITE ORDERS</h1>
+                    </center>
+                    <div id="bar1">
+                        <div class="Mixta">Mixta<a style="float: right;">  
+                            75%</a>
+                        </div>
+                    </div>
+                    <div id="bar2">
+                        <div class="Pollo">Pollo <a style="float: right;">  
+                            80%</a>
+                        </div>
+                    </div>
+                    <div id="bar3">
+                        <div class="Carne">Carne   <a style="float: right;"> 
+                            97%</a>
+                        </div>
+                    </div>
+                    <div id="bar4">
+                        <div class="DeTodito">De Todito    <a style="float: right;">
+                            90%</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</html>

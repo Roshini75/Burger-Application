@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../ciudad.css">
+        <link rel="stylesheet" type="text/css" href="../ibras.css">
+        <link rel="stylesheet" type="text/css" href="admin.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="../images/Burguer.png"/>
+        <title>Dashboard - Admin</title>
+        <style type="text/css">
+            select{
+            width: auto;
+            color: #8a97a0;
+            text-transform: capitalize;
+            }
+            label{
+            display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="height: auto; background: none;">
+            <nav  id="borderimg1" class="main-nav">
+                <img src="../images/5.png" alt="logo" height="100" width="100">
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">☰ Admin Menu</button>  
+                </div>
+            </nav>
+            <div class="line"></div>
+        </header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="dashboard.html"><i class="fa fa-th-large" aria-hidden="true" style="padding: 10px"></i>Dashboard</a>
+            <a href="add_product.html"><i class="fa fa-plus-square" aria-hidden="true" style="padding: 10px"></i>Add Product</a>
+            <a href="edit_product.html"><i class="fa fa-pencil-square-o" aria-hidden="true" style="padding: 10px"></i>Edit Product</a>
+            <a href="orders.html"><i class="fa fa-cutlery" aria-hidden="true" style="padding: 10px"></i>Orders</a>
+            <a href="profile.html"><i class="fa fa-user" aria-hidden="true" style="padding: 10px"></i>Admin Profile</a>
+            <a href="password.html"><i class="fa fa-key" aria-hidden="true" style="padding: 10px"></i>Change Password</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="padding: 10px"></i>Logout</a>
+        </div>
+        <div id="wrapper">
+            <center>
+                <h1>STATISTICS</h1>
+            </center>
+            <div class="row" >
+                <div class="col-3 col-a-6 col-b-12" style="text-align: center; padding : 15px;">
+                    <div class="inner-box-dashboard">
+                        <a><i class="fa fa-bar-chart fa-4x" aria-hidden="true"></i></a>
+                        <h2 class="color-green text-normal"> No.of Sells</h2>
+                        <h3 class="color-green text-normal"> 8,491</h3>
+                    </div>
+                </div>
+                <div class="col-3 col-a-6 col-b-12" style="text-align: center; padding : 15px;">
+                    <div class="inner-box-dashboard">
+                        <a><i class="fa fa-user fa-4x" aria-hidden="true"></i></a>
+                        <h2 class="color-green text-normal"> Total visitors</h2>
+                        <h3 class="color-green text-normal"> 3,973</h3>
+                    </div>
+                </div>                
+                <div class="col-3 col-a-6 col-b-12" style="text-align: center; padding : 15px;">
+                    <div class="inner-box-dashboard">
+                        <a><i class="fa fa-briefcase fa-4x" aria-hidden="true"></i></a>
+                        <h2 class="color-green text-normal"> New Users</h2>
+                        <h3 class="color-green text-normal"> 7,333</h3>
+                    </div>
+                </div>
+                <div class="col-3 col-a-6 col-b-12" style="text-align: center; padding : 15px;">
+                    <div class="inner-box-dashboard">
+                        <a><i class="fa fa-database fa-4x" aria-hidden="true"></i></a>
+                        <h2 class="color-green text-normal"> Total Orders</h2>
+                        <h3 class="color-green text-normal"> 30,973</h3>
+                    </div>
+                </div>
+            </div>
+            <h1 style="text-align: center; margin-top: 80px;">RECENT ORDERS REQUESTED</h1>
+            <div style="margin: 15px; overflow-x: auto;">
+                <table id="t01">
+                    <tr>
+                        <th>Food Item</th>
+                        <th>Price</th>
+                        <th>Product ID</th>
+                    </tr>
+                    <tr>
+                        <td>Mixta</td>
+                        <td>$10</td>
+                        <td>83746188</td>
+                    </tr>
+                    <tr>
+                        <td>Pollo</td>
+                        <td>$9</td>
+                        <td>22789346</td>
+                    </tr>
+                    <tr>
+                        <td>Carne</td>
+                        <td>$10</td>
+                        <td>76833647</td>
+                    </tr>
+                    <tr>
+                        <td>De Todito</td>
+                        <td>$8</td>
+                        <td>90895643</td>
+                    </tr>
+                </table>
+            </div>
+            <center>
+                <h1 style="margin-top: 80px;">MONTHLY REVENUE</h1>
+            </center>
+            <div class="col-3"></div>
+            <div class="col-6 col-a-12 col-b-12" style="margin-bottom: 50px;">
+                <div style="background: #f4f7f8; padding: 50px; text-align: center;">
+                    <label for="month">Month:</label>
+                    <select id="month" name="month" style="height: 50px;">
+                        <option value="january">january</option>
+                        <option value="febrauary">febrauary</option>
+                        <option value="march">march</option>
+                        <option value="april">april</option>
+                        <option value="may">may</option>
+                        <option value="june">june</option>
+                        <option value="july">july</option>
+                        <option value="august">august</option>
+                        <option value="september">september</option>
+                        <option value="october">october</option>
+                        <option value="november">november</option>
+                        <option value="december">december</option>
+                    </select>
+                    <div id="bar1">
+                        <div class="Week1">Week1<a style="float: right;">  
+                            60%</a>
+                        </div>
+                    </div>
+                    <div id="bar2">
+                        <div class="Week2">Week2 <a style="float: right;">  
+                            50%</a>
+                        </div>
+                    </div>
+                    <div id="bar3">
+                        <div class="Week3">Week3<a style="float: right;"> 
+                            75%</a>
+                        </div>
+                    </div>
+                    <div id="bar4">
+                        <div class="Week4">Week4<a style="float: right;">
+                            45%</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";        }
+        
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";        }
+    </script>
+</html>

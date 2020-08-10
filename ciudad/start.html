@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="ionicons.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="ciudad.css">
+        <link rel="stylesheet" type="text/css" href="ibras.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Hamburguesa - Main</title>
+        <link rel="icon" type="image/png" href="images/Burguer.png"/>
+    </head>
+    <body>
+        <header>
+            <nav  id="borderimg1" class="main-nav">
+                <img src="images/5.png" alt="logo" height="100" width="100">
+                <ul class="onlyonlappy">
+                    <li><a class="active" href="#">INICIO</a></li>
+                    <li><a href="aboutus.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="blog/">BLOG</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                    <li><a onclick="openModal1()" style="cursor: pointer;">REGISTRO</a></li>
+                    <li><a onclick="openModal()" style="cursor: pointer;">INCIAR SESSION</a></li>
+                </ul>
+                <div id="main" class="onlynotonlappy">
+                    <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+                </div>
+            </nav>
+            <div class="line"></div>
+            <div class="main-heading">
+                <p class="main-subheading">LAS MEJORES DE LA CIUDAD</p>
+                <h1>Hamburguesas</h1>
+                <button onclick="location.href='menu.html'">VER MENU HOY</button>
+            </div>
+            <div class="line-up" style="position:absolute; bottom:0"></div>
+        </header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a class="onlynotonlappy" href="start.html">INICIO</a>
+            <a class="onlynotonlappy" href="aboutus.html">SOBRE NOSOTROS</a>
+            <a class="onlynotonlappy" href="menu.html">MENU</a>
+            <a class="onlynotonlappy" href="blog/">BLOG</a>
+            <a class="onlynotonlappy" href="contact.html">CONTACTO</a>
+            <a class="onlynotonlappy" onclick="openModal1()">REGISTRO</a>
+            <a class="onlynotonlappy" onclick="openModal()">INCIAR SESSION</a>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="closebutton">&times;</span>
+                <form class="loginregform">
+                    <div style="text-align: center; color: black;">
+                    <img src="images/Burguer.png" width="50" height="50">
+                    <h2 style="color: black;">Iniciar Sesion</h2>
+                    </div>
+                    <fieldset>
+                        <label for="name">Username:</label>
+                        <input class="loginreginput" type="text" >
+                        <label for="quantity">Password:</label>
+                        <input class="loginreginput" type="text" >
+                    </fieldset>
+                    <button type="submit" class="loginregbutton" style="margin-top: 30px;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <span class="closebutton">&times;</span>
+                <form class="loginregform">
+                    <div style="text-align: center; color: black;">
+                    <img src="images/Burguer.png" width="50" height="50">
+                    <h2 style="color: black;">Registro de llsuario</h2>
+                    </div>
+                    <fieldset>
+                        <label for="name">Name Lastname:</label>
+                        <input class="loginreginput" type="text" >
+                        <label for="quantity">Mail:</label>
+                        <input class="loginreginput" type="email" >
+                        <label for="quantity">Password:</label>
+                        <input class="loginreginput" type="password" >
+                        <label for="quantity">Reapeat Password:</label>
+                        <input class="loginreginput" type="password" >
+                        <label for="quantity">Address:</label>
+                        <textarea class="loginreginput"></textarea>
+                    </fieldset>
+                    <button class="loginregbutton"  type="submit" style="margin-top: 30px;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <section class="history">
+            <img class="width-el1" src="images/story1.png" style="position: absolute; left: 0; bottom: 0;">
+            <img class="width-el1" src="images/story2.png" style="position: absolute; right: 0; bottom: 0;">
+            <div class="wrapper">
+                <img src="images/Burguer.png" height="50" width="50" alt="burger logo">
+                <h2>Nuestra historia</h2>
+                <div class="row">
+                    <div class="col-2 onlyonlappy">&nbsp;</div>
+                    <div class="col-4 col-a-6 col-b-12">
+                        <p class="history-content">los origenese se remontan al 10 de junio de 1960,cuando Ibrahim Mata compraron la pizzeria <strong>DomiPizza's,</strong> con una inversion inicial de 950 dolares. El local estaba situado en Lecheria, y la idea de zibrahim era vender Hamburguesas a domicilio a las personas de las residencias cercanas.Aquella experiencia no marchado como tenian previsto.</p>
+                    </div>
+                    <div class="col-4 col-a-6 col-b-12">
+                        <p class="history-content">A pesar de todo,ibrahim se mantuvo al frente del restautantr y tomo decisiones importantes para su futuro, como reducir la carta de productos y establecer un repato a domicilio gratuito. Despues de adquirir dos restaurantes mas en Barcelona, en 1965 renombro sus tres locales como <strong>libra's Burger Grill</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="burger-menu">
+            <div class="line-up" style="position:absolute; bottom: 0;"></div>
+            <div class="wrapper">
+                <img src="images/Burguer.png" height="50" width="50" alt="burger logo">
+                <h2>Las mas vendidos</h2>
+                <div class="row" style="width: 100%;">
+                    <div class="col-3 col-a-4 col-b-6">
+                        <div class="burger-content">
+                            <img src="images/burguer1.png" width="50%">
+                            <p class="bug-text">Mixta</p>
+                            <h3>$11.90</h3>
+                            <button class="btn-burger">Ordenar ahora</button>
+                        </div>
+                    </div >
+                    <div class="col-3 col-a-4 col-b-6">
+                        <div class="burger-content">
+                            <img src="images/burguer1.png" width="50%">
+                            <p class="bug-text">Mixta</p>
+                            <h3>$11.90</h3>
+                            <button class="btn-burger">Ordenar ahora</button>
+                        </div>
+                    </div>
+                    <div class="col-3 col-a-4 col-b-6">
+                        <div class="burger-content">
+                            <img src="images/burguer1.png" width="50%">
+                            <p class="bug-text">Mixta</p>
+                            <h3>$11.90</h3>
+                            <button class="btn-burger">Ordenar ahora</button>
+                        </div>
+                    </div>
+                    <div class="col-3 col-a-4 col-b-6">
+                        <div class="burger-content">
+                            <img src="images/burguer1.png" width="50%">
+                            <p class="bug-text">Mixta</p>
+                            <h3>$11.90</h3>
+                            <button class="btn-burger">Ordenar ahora</button>
+                        </div>
+                    </div>
+                    <div class="col-3 col-a-4 col-b-6">
+                        <div class="burger-content">
+                            <img src="images/burguer1.png" width="50%">
+                            <p class="bug-text">Mixta</p>
+                            <h3>$11.90</h3>
+                            <button class="btn-burger">Ordenar ahora</button>
+                        </div>
+                    </div >
+                    <div class="col-3 col-a-4 col-b-6">
+                        <div class="burger-content">
+                            <img src="images/burguer1.png" width="50%">
+                            <p class="bug-text">Mixta</p>
+                            <h3>$11.90</h3>
+                            <button class="btn-burger">Ordenar ahora</button>
+                        </div>
+                    </div>
+                    <div class="col-3 col-a-4 col-b-6">
+                        <div class="burger-content">
+                            <img src="images/burguer1.png" width="50%">
+                            <p class="bug-text">Mixta</p>
+                            <h3>$11.90</h3>
+                            <button class="btn-burger">Ordenar ahora</button>
+                        </div>
+                    </div>
+                    <div class="col-3 col-a-4 col-b-6">
+                        <div class="burger-content">
+                            <img src="images/burguer1.png" width="50%">
+                            <p class="bug-text">Mixta</p>
+                            <h3>$11.90</h3>
+                            <button class="btn-burger">Ordenar ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-menu">
+                <button onclick="location.href='menu.html'">VER MENU HOY</button>
+            </div>
+        </div>
+        <div class="our-menu">
+            <div class="line-down" style="position:absolute; top:100%;"></div>
+            <div class="wrapper">
+                <img src="images/Burguer.png" height="50" width="50" alt="burger logo">
+                <h2>Nuestro menu</h2>
+                <ul>
+                    <li><a class="multi-menu" id="defaultone" onclick="showhide(this, 'todos')">Todos</a></li>
+                    <li><a class="multi-menu" onclick="showhide(this, 'pollo')">Pollo</a></li>
+                    <li><a class="multi-menu" onclick="showhide(this, 'carne')">Carne</a></li>
+                    <li><a class="multi-menu" onclick="showhide(this, 'mixta')">Mixta</a></li>
+                    <li><a class="multi-menu" onclick="showhide(this, 'detodito')">De Todito</a></li>
+                </ul>
+                <div class="row" style="width: 100%;">
+                    <div class="col-6 col-a-6 col-b-12 todos pollo">
+                        <div class="burger-grp">
+                            <img src="images/hamburguesa1.jpg" height="50"width="50">
+                            <p class="burger-name">hamburguesa de pollo</p>
+                            <p class="burger-price">$12.00</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-6 col-b-12 todos carne">
+                        <div class="burger-grp">
+                            <img src="images/hamburguesa2.jpg" height="50"width="50">
+                            <p class="burger-name">hamburguesa carne</p>
+                            <p class="burger-price">$12.00</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-6 col-b-12 todos carne">
+                        <div class="burger-grp">
+                            <img src="images/hamburguesa3.jpg" height="50"width="50">
+                            <p class="burger-name">hamburguesa carne</p>
+                            <p class="burger-price">$12.00</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-6 col-b-12 todos mixta">
+                        <div class="burger-grp">
+                            <img src="images/hamburguesa4.jpg" height="50"width="50">
+                            <p class="burger-name">hamburguesa mixta</p>
+                            <p class="burger-price">$6.00</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-6 col-b-12 todos detodito">
+                        <div class="burger-grp">
+                            <img src="images/hamburguesa5.jpg" height="50"width="50">
+                            <p class="burger-name">hamburguesa de todito</p>
+                            <p class="burger-price">$12.00</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-6 col-b-12 todos pollo">
+                        <div class="burger-grp">
+                            <img src="images/hamburguesa6.jpg" height="50"width="50">
+                            <p class="burger-name">hamburguesa pollo</p>
+                            <p class="burger-price">$20.00</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-6 col-b-12 todos detodito">
+                        <div class="burger-grp">
+                            <img src="images/hamburguesa7.jpg" height="50"width="50">
+                            <p class="burger-name">hamburguesa de todito</p>
+                            <p class="burger-price">$12.00</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-6 col-b-12 todos carne">
+                        <div class="burger-grp">
+                            <img src="images/hamburguesa8.jpg" height="50"width="50">
+                            <p class="burger-name">hamburguesa carne</p>
+                            <p class="burger-price">$6.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-menu">
+                <button onclick="location.href='menu.html'">VER MENU HOY</button>
+            </div>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <section class="footer-section">
+                    <img src="images/5.png" alt="logo" height="200" width="200">
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Habla a:</p>
+                    <p class="footer-content">Av. Intercommunal,sectro la Mora,calle 8</p>
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Telefono:</p>
+                    <p class="footer-content">+58 251 261 00 01</p>
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Correo:</p>
+                    <p class="footer-content">tadiroshini12@gmail.com</p>
+                </section>
+                <section class="footer-section">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-pinterest icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo icon"></i></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <p class="footer-content">Copyright &copy; 2020 Todos los derechos reservados | Este sitio esta hecho con &hearts; por DiazApps </p>
+                </section>
+            </div>
+        </footer>
+        <script type="text/javascript" src="ibras.js"></script>
+        <script type="text/javascript">
+            document.getElementById("defaultone").click();
+        </script>
+    </body>
+</html>

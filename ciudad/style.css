@@ -1,0 +1,317 @@
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    width: auto;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    position: absolute;
+    right: 15%;
+}
+
+.onlyonlappy{
+    display: inline !important;
+    visibility: visible;
+}
+.onlynotonlappy{
+    display: none !important;
+    visibility: hidden;
+}
+
+.loginregform {
+    margin: 10px auto;
+    margin-top: 40px;
+    padding: 40px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+.loginreginput {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+
+
+
+.loginregbutton {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #EF0031;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #EF0031;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .col-a-1 {
+        width: 8.33%;
+    }
+    .col-a-2 {
+        width: 16.66%;
+    }
+    .col-a-3 {
+        width: 25%;
+    }
+    .col-a-4 {
+        width: 33.33%;
+    }
+    .col-a-5 {
+        width: 41.66%;
+    }
+    .col-a-6 {
+        width: 50%;
+        float: left;
+    }
+    .col-a-7 {
+        width: 58.33%;
+    }
+    .col-a-8 {
+        width: 66.66%;
+    }
+    .col-a-9 {
+        width: 75%;
+    }
+    .col-a-10 {
+        width: 83.33%;
+    }
+    .col-a-11 {
+        width: 91.66%;
+    }
+    .col-a-12 {
+        width: 100%;
+    }
+    .onlynotonlappy{
+        display: block !important;
+        visibility: visible;
+    }
+    .onlyonlappy{
+        display: none !important;
+        visibility: hidden;
+    }
+    .openbtn{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /*For mobile:*/
+    .col-b-1 {
+        width: 8.33%;
+    }
+    .col-b-2 {
+        width: 16.66%;
+    }
+    .col-b-3 {
+        width: 25%;
+    }
+    .col-b-4 {
+        width: 33.33%;
+    }
+    .col-b-5 {
+        width: 41.66%;
+    }
+    .col-b-6 {
+        width: 50%;
+    }
+    .col-b-7 {
+        width: 58.33%;
+    }
+    .col-b-8 {
+        width: 66.66%;
+    }
+    .col-b-9 {
+        width: 75%;
+    }
+    .col-b-10 {
+        width: 83.33%;
+    }
+    .col-b-11 {
+        width: 91.66%;
+    }
+    .col-b-12 {
+        width: 100%;
+    }
+    .wrapper{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #main{
+        right: 0%;
+    }
+    .openbtn{
+        font-size: 20px;
+    }
+    .loginregform{
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+        float: left;
+        margin-top: 10px;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+        float: left;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.row:before{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+
+
+

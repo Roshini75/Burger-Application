@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../ciudad.css">
+        <link rel="stylesheet" type="text/css" href="../ibras.css">
+        <link rel="stylesheet" type="text/css" href="admin.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="../images/Burguer.png"/>
+        <title>Edit Product - Admin</title>
+    </head>
+    <body>
+        <header style="height: auto; background: none;">
+            <nav  id="borderimg1" class="main-nav">
+                <img src="../images/5.png" alt="logo" height="100" width="100">
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">☰ Admin Menu</button>  
+                </div>
+            </nav>
+            <div class="line"></div>
+        </header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="dashboard.html"><i class="fa fa-th-large" aria-hidden="true" style="padding: 10px"></i>Dashboard</a>
+            <a href="add_product.html"><i class="fa fa-plus-square" aria-hidden="true" style="padding: 10px"></i>Add Product</a>
+            <a href="edit_product.html"><i class="fa fa-pencil-square-o" aria-hidden="true" style="padding: 10px"></i>Edit Product</a>
+            <a href="orders.html"><i class="fa fa-cutlery" aria-hidden="true" style="padding: 10px"></i>Orders</a>
+            <a href="profile.html"><i class="fa fa-user" aria-hidden="true" style="padding: 10px"></i>Admin Profile</a>
+            <a href="password.html"><i class="fa fa-key" aria-hidden="true" style="padding: 10px"></i>Change Password</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="padding: 10px"></i>Logout</a>
+
+        </div>
+        <section id="wrapper" style="position: relative; margin-bottom: 50px; background: #f4f7f8;">
+            <div style="padding-top: 20px; padding-bottom: 15px; text-align: center;" class="editproductsection">
+                <h2 style="color: black;">EDIT PRODUCT</h2>
+                <div class="row">
+                    <div class="col-6 col-a-12 col-b-12">
+                        <div class="burger-grp2">
+                            <img src="../images/hamburguesa1.jpg" class="admin-edit-product">
+                            <p class="burger-name2">hamburguesa de pollo</p>
+                            <a class="product-stock">In stock</a>
+                            <p class="burger-price">$12.00, Quantity : 124</p>
+                            <a class="product-edit">Edit</a>
+                            <a class="product-delete">Delete</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-12 col-b-12">
+                        <div class="burger-grp2">
+                            <img src="../images/hamburguesa2.jpg" class="admin-edit-product">
+                            <p class="burger-name2">hamburguesa carne</p>
+                            <a class="product-nostock">No stock</a>
+                            <p class="burger-price">$12.00, Quantity : 0</p>
+                            <a class="product-edit">Edit</a>
+                            <a class="product-delete">Delete</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-12 col-b-12">
+                        <div class="burger-grp2">
+                            <img src="../images/hamburguesa3.jpg" class="admin-edit-product">
+                            <p class="burger-name2">hamburguesa carne</p>
+                            <a class="product-nostock">No stock</a>
+                            <p class="burger-price">$12.00, Quantity : 0</p>
+                            <a class="product-edit">Edit</a>
+                            <a class="product-delete">Delete</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-12 col-b-12">
+                        <div class="burger-grp2">
+                            <img src="../images/hamburguesa4.jpg" class="admin-edit-product">
+                            <p class="burger-name2">hamburguesa mixta</p>
+                            <a class="product-stock">In stock</a>
+                            <p class="burger-price">$6.00, Quantity : 100</p>
+                            <a class="product-edit">Edit</a>
+                            <a class="product-delete">Delete</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-12 col-b-12">
+                        <div class="burger-grp2">
+                            <img src="../images/hamburguesa5.jpg" class="admin-edit-product">
+                            <p class="burger-name2">hamburguesa de todito</p>
+                            <a class="product-stock">In stock</a>
+                            <p class="burger-price">$12.00, Quantity : 4</p>
+                            <a class="product-edit">Edit</a>
+                            <a class="product-delete">Delete</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-12 col-b-12">
+                        <div class="burger-grp2">
+                            <img src="../images/hamburguesa6.jpg" class="admin-edit-product">
+                            <p class="burger-name2">hamburguesa pollo</p>
+                            <a class="product-stock">In stock</a>
+                            <p class="burger-price">$20.00, Quantity : 188</p>
+                            <a class="product-edit">Edit</a>
+                            <a class="product-delete">Delete</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-12 col-b-12">
+                        <div class="burger-grp2">
+                            <img src="../images/hamburguesa7.jpg" class="admin-edit-product">
+                            <p class="burger-name2">hamburguesa de todito</p>
+                            <a class="product-nostock">No stock</a>
+                            <p class="burger-price">$12.00, Quantity : 0</p>
+                            <a class="product-edit">Edit</a>
+                            <a class="product-delete">Delete</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-a-12 col-b-12">
+                        <div class="burger-grp2">
+                            <img src="../images/hamburguesa8.jpg" class="admin-edit-product">
+                            <p class="burger-name2">hamburguesa carne</p>
+                            <a class="product-nostock">No stock</a>
+                            <p class="burger-price">$6.00, Quantity : 0</p>
+                            <a class="product-edit">Edit</a>
+                            <a class="product-delete">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</html>

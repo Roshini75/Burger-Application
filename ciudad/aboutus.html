@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="ionicons.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="ciudad.css">
+        <link rel="stylesheet" type="text/css" href="ibras.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Hamburguesa - About Us</title>
+        <link rel="icon" type="image/png" href="images/Burguer.png"/>
+    </head>
+    <body>
+        <header>
+            <nav  id="borderimg1" class="main-nav">
+                <img src="images/5.png" alt="logo" height="100" width="100">
+                <ul class="onlyonlappy">
+                    <li><a href="start.html">INICIO</a></li>
+                    <li><a class="active" href="#">SOBRE NOSOTROS</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="blog/">BLOG</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                    <li><a onclick="openModal1()" style="cursor: pointer;">REGISTRO</a></li>
+                    <li><a onclick="openModal()" style="cursor: pointer;">INCIAR SESSION</a></li>
+                </ul>
+                <div id="main" class="onlynotonlappy">
+                    <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+                </div>
+            </nav>
+            <div class="line"></div>
+            <div class="main-heading">
+                <p class="main-subheading">LAS MEJORES DE LA CIUDAD</p>
+                <h1>Sobre mestras Hamburguesas</h1>
+            </div>
+            <div class="line-up" style="position:absolute; bottom:0"></div>
+        </header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a class="onlynotonlappy" href="start.html">INICIO</a>
+            <a class="onlynotonlappy" href="aboutus.html">SOBRE NOSOTROS</a>
+            <a class="onlynotonlappy" href="menu.html">MENU</a>
+            <a class="onlynotonlappy" href="blog/">BLOG</a>
+            <a class="onlynotonlappy" href="contact.html">CONTACTO</a>
+            <a class="onlynotonlappy" onclick="openModal1()">REGISTRO</a>
+            <a class="onlynotonlappy" onclick="openModal()">INCIAR SESSION</a>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="closebutton">&times;</span>
+                <form class="loginregform">
+                    <div style="text-align: center; color: black;">
+                    <img src="images/Burguer.png" width="50" height="50">
+                    <h2 style="color: black;">Iniciar Sesion</h2>
+                    </div>
+                    <fieldset>
+                        <label for="name">Username:</label>
+                        <input class="loginreginput" type="text" >
+                        <label for="quantity">Password:</label>
+                        <input class="loginreginput" type="text" >
+                    </fieldset>
+                    <button type="submit" class="loginregbutton" style="margin-top: 30px;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <span class="closebutton">&times;</span>
+                <form class="loginregform">
+                    <div style="text-align: center; color: black;">
+                    <img src="images/Burguer.png" width="50" height="50">
+                    <h2 style="color: black;">Registro de llsuario</h2>
+                    </div>
+                    <fieldset>
+                        <label for="name">Name Lastname:</label>
+                        <input class="loginreginput" type="text" >
+                        <label for="quantity">Mail:</label>
+                        <input class="loginreginput" type="email" >
+                        <label for="quantity">Password:</label>
+                        <input class="loginreginput" type="password" >
+                        <label for="quantity">Reapeat Password:</label>
+                        <input class="loginreginput" type="password" >
+                        <label for="quantity">Address:</label>
+                        <textarea class="loginreginput"></textarea>
+                    </fieldset>
+                    <button class="loginregbutton"  type="submit" style="margin-top: 30px;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="ibra-section">
+            <div  class="wrapper">
+                <h2>Somos Ibra</h2>
+                <div class="row" style="width: 100%">
+                    <div class="col-1 onlyonlappy">&nbsp;</div>
+                    <div class="col-10 col-a-12 col-b-12">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-6 col-b-6 col-a-6">
+                                <img style="padding:10px;" src="images/hamburguesa1.jpg" width="100%">
+                            </div>
+                            <div class="col-6 col-b-6 col-a-6">
+                                <img style="padding:10px;" src="images/hamburguesa2.jpg" width="100%">
+                            </div>
+                        </div>
+                        <p class="bug-text">Al comenzjores el dia, cada manama estamos mas que preparandonos par lo mejor de nosatros mismos.Porque cada uno de nuestros clientes nos inspira trabajar en pro del mejor servicio,las mejores   entregas y,sobre todo, mejores Hamburguesasas</p>
+                    </div>
+                </div>
+                <div class="row" style="width: 100%">
+                    <div class="col-1 onlyonlappy">&nbsp;</div>
+                    <div class="col-5 col-a-6 col-b-12">
+                        <p class="bug-text">Al comenzjores el dia, cada manama estamos mas que preparandonos par lo mejor de nosatros mismos.Porque cada uno de nuestros clientes nos inspira trabajar en pro del mejor servicio,las mejores   entregas y,sobre todo, mejores Hamburguesasas</p>
+                    </div>
+                    <div class="col-5 col-a-6 col-b-12">
+                        <p class="bug-text">Al comenzjores el dia, cada manama estamos mas que preparandonos par lo mejor de nosatros mismos.Porque cada uno de nuestros clientes nos inspira trabajar en pro del mejor servicio,las mejores   entregas y,sobre todo, mejores Hamburguesasas</p>
+                    </div>
+                </div>
+                <div style="display: inline-block;" class="btn-class row">
+                    <button>VER EL MENU HOY</button>
+                    <button class="btn-green">PEDAR AHORA</button>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <div class="wrapper">
+                <img src="images/Burguer.png" height="50" width="50" alt="burger logo">
+                <h2>Lo que dicen los clientes</h2>
+                <div class="row" width="100%" id="carousel">
+            
+                </div>
+                <div class="dot-container" style="text-align: center;">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </div>
+        </div>
+        <div id="carouselcontent" style="display: none;">
+            <div class="col-4 col-a-4 col-b-12 mySlides fade">
+                <div class="testimonial-content">
+                    <h3 style="text-align: left">1</h3>
+                    <p style="text-align: left">It is the best service i had ever experienced , within the low proce and high quality it is quiet incredible.</p>
+                    <div style="text-align: left;">
+                        <img class="client-image" src="images/adonella.PNG" width="75" height="75">
+                        <div class="row">
+                            <p style="color: red;">Adonella<span style="color: #fff;">, Clientte</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-a-4 col-b-12 mySlides fade">
+                <div class="testimonial-content">
+                    <h3 style="text-align: left">2</h3>
+                    <p style="text-align: left">It is the best service i had ever experienced , within the low proce and high quality it is quiet incredible.</p>
+                    <div style="text-align: left;">
+                        <img class="client-image" src="images/benito.PNG" width="75" height="75">
+                        <div class="row">
+                            <p style="color: red;">Benito<span style="color: #fff;">, Clientte</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-a-4 col-b-12 mySlides fade">
+                <div class="testimonial-content">
+                    <h3 style="text-align: left">3</h3>
+                    <p style="text-align: left">It is the best service i had ever experienced , within the low proce and high quality it is quiet incredible.</p>
+                    <div style="text-align: left;">
+                        <img class="client-image" src="images/anacristina.PNG" width="75" height="75">
+                        <div class="row">
+                            <p style="color: red;">Anacristina<span style="color: #fff;">, Clientte</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-a-4 col-b-12 mySlides fade">
+                <div class="testimonial-content">
+                    <h3 style="text-align: left">4</h3>
+                    <p style="text-align: left">It is the best service i had ever experienced , within the low proce and high quality it is quiet incredible.</p>
+                    <div style="text-align: left;">
+                        <img class="client-image" src="images/benito.PNG" width="75" height="75">
+                        <div class="row">
+                            <p style="color: red;">Benito<span style="color: #fff;">, Clientte</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-a-4 col-b-12 mySlides fade">
+                <div class="testimonial-content">
+                    <h3 style="text-align: left">5</h3>
+                    <p style="text-align: left">It is the best service i had ever experienced , within the low proce and high quality it is quiet incredible.</p>
+                    <div style="text-align: left;">
+                        <img class="client-image" src="images/anacristina.PNG" width="75" height="75">
+                        <div class="row">
+                            <p style="color: red;">Anacristina<span style="color: #fff;">, Clientte</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" style="position: relative; text-align: center;">
+            <div class="line-down" style="position:absolute; top:100%;"></div>
+            <div class="wrapper">
+                <h2 class="smallonmobile">Nos esforzamos por brindar un buen servicio para su distrute</h2>
+            </div>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <section class="footer-section">
+                    <img src="images/5.png" alt="logo" height="200" width="200">
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Habla a:</p>
+                    <p class="footer-content">Av. Intercommunal,sectro la Mora,calle 8</p>
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Telefono:</p>
+                    <p class="footer-content">+58 251 261 00 01</p>
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Correo:</p>
+                    <p class="footer-content">tadiroshini12@gmail.com</p>
+                </section>
+                <section class="footer-section">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-pinterest icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo icon"></i></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <p class="footer-content">Copyright &copy; 2020 Todos los derechos reservados | Este sitio esta hecho con &hearts; por DiazApps </p>
+                </section>
+            </div>
+        </footer>
+        <script type="text/javascript" src="ibras.js"></script>
+        <script>
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("mySlides");
+            var addition = document.getElementById("carousel");
+
+            var subtraction = document.getElementById("carouselcontent");
+
+            var dots = document.getElementsByClassName("dot");
+            showSlides();
+            //var content = document.getElementById('carousel');
+            function showSlides() {
+                var i;
+                slides = document.getElementsByClassName("mySlides");
+                //console.log(slides);
+                while (addition.firstChild) {
+                    subtraction.appendChild(addition.firstChild);
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" dotactive", "");
+                }
+
+                addition.appendChild(slides[0]);
+                addition.appendChild(slides[1]);
+                addition.appendChild(slides[2]);
+                dots[(slideIndex+0)%slides.length].className += " dotactive";
+                dots[(slideIndex+1)%slides.length].className += " dotactive";
+                dots[(slideIndex+2)%slides.length].className += " dotactive";
+                slideIndex+=3;
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+</html>

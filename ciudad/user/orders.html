@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../ciudad.css">
+        <link rel="stylesheet" type="text/css" href="../ibras.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../admin/style.css">
+        <link rel="stylesheet" href="../admin/admin.css">
+        <link rel="stylesheet" href="user.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../admin/font-awesome.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="../images/Burguer.png"/>
+        <title>Past Orders - User</title>
+    </head>
+    <body>
+        <header style="height: auto;">
+            <nav  id="borderimg1" class="main-nav">
+                <img src="../images/5.png" alt="logo" height="100" width="100">
+                <ul>
+                   <li class="onlyonlappy"><a href="../start.html">INICIO</a></li>
+                    <li class="onlyonlappy"><a href="../aboutus.html">SOBRE NOSOTROS</a></li>
+                    <li class="onlyonlappy"><a href="../menu.html">MENU</a></li>
+                    <li class="onlyonlappy"><a href="../blog/">BLOG</a></li>
+                    <li class="onlyonlappy"><a  href="../contact.html">CONTACTO</a></li>
+                    <li>
+                        <button class="openbtn" onclick="openNav()">☰ User Menu</button>  
+                    </li>
+                </ul>
+            </nav>
+            <div class="line"></div>
+            <div class="main-heading">
+                <p class="main-heading-p">Order Again? <a href="../menu.html">CLICK HERE</a></p>
+            </div>
+        <div class="line-up" style=""></div>
+        </header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a class="onlynotonlappy" href="../start.html">INICIO</a>
+            <a class="onlynotonlappy" href="../aboutus.html">SOBRE NOSOTROS</a>
+            <a class="onlynotonlappy" href="../menu.html">MENU</a>
+            <a class="onlynotonlappy" href="../blog/">BLOG</a>
+            <a class="onlynotonlappy" href="../contact.html">CONTACTO</a>
+            <a href="profile.html"><i class="fa fa-user" aria-hidden="true" style="padding: 10px"></i>My Profile</a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true" style="padding: 10px"></i>Cart</a>
+            <a href="order_page.html"><i class="fa fa-cutlery" aria-hidden="true" style="padding: 10px"></i>Order Page</a>
+            <a href="orders.html"><i class="fa fa-address-book-o" aria-hidden="true" style="padding: 10px"></i>My Orders</a>
+            <a href="password.html"><i class="fa fa-key" aria-hidden="true" style="padding: 10px"></i>Change Password</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="padding: 10px"></i>Logout</a>
+        </div>
+        <div class="userpages-block">
+            <div class="line-down" style="position: absolute; top: 100%;"></div>
+            <div id="wrapper" class="padding-40" style="overflow-x: auto;">
+                <center>
+                    <h1>PAST ORDERS</h1>
+                </center>
+                <div style="overflow-x: auto;">
+                    <table id="t01">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Order Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Offer Price</th>
+                            <th>Total Price</th>
+                            <th>Delivery Time</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mixta, Pollo, Carne</td>
+                            <td>3, 1, 2</td>
+                            <td>$10, $6, $8</td>
+                            <td>$8, $6, $6</td>
+                            <td>$42</td>
+                            <td>10 05 PM</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pollo</td>
+                            <td>4</td>
+                            <td>$9</td>
+                            <td>$8</td>
+                            <td>$32</td>
+                            <td>02 50 PM</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carne,De Todito</td>
+                            <td>2,1</td>
+                            <td>$10,$7</td>
+                            <td>$8,$6</td>
+                            <td>$22</td>
+                            <td>05 30 PM</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>De Todito,Mixta</td>
+                            <td>1,1</td>
+                            <td>$10,$10</td>
+                            <td>$8,$8</td>
+                            <td>$16</td>
+                            <td>11 00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Mixta</td>
+                            <td>5</td>
+                            <td>$10</td>
+                            <td>$7</td>
+                            <td>$35</td>
+                            <td>12 00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Carne</td>
+                            <td>3</td>
+                            <td>$8</td>
+                            <td>$7</td>
+                            <td>$21</td>
+                            <td>10 30 AM</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Pollo</td>
+                            <td>2</td>
+                            <td>$11</td>
+                            <td>$10</td>
+                            <td>$20</td>
+                            <td>3 30 PM</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <section class="footer-section">
+                    <img src="../images/5.png" alt="logo" height="200" width="200">
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Habla a:</p>
+                    <p class="footer-content">Av. Intercommunal,sectro la Mora,calle 8</p>
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Telefono:</p>
+                    <p class="footer-content">+58 251 261 00 01</p>
+                </section>
+                <section class="footer-section">
+                    <p class="footer-heading">Correo:</p>
+                    <p class="footer-content">tadiroshini12@gmail.com</p>
+                </section>
+                <section class="footer-section">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-pinterest icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square icon"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo icon"></i></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <p class="footer-content">Copyright &copy; 2020 Todos los derechos reservados | Este sitio esta hecho con &hearts; por DiazApps </p>
+                </section>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</html>
